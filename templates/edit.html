@@ -1,0 +1,39 @@
+
+
+
+
+<form action="/username" method="post">
+    <label>
+        Username
+        <input type="text" name="username"/>
+    </label>
+</form>
+
+<form action="/password" method="post">
+    <label>
+        Password
+        <input type="text" name="password"/>
+    </label>
+</form>
+
+<form action="/verify" method="post">
+    <label>
+        Verify Password
+        <input type="text" name="verify"/>
+    </label>
+</form>
+
+<form action="/email" method="post">
+    <label>
+        Email (optional)
+        <input type="text" name="email"/>
+    </label>
+</form>
+<form action="/" method="post">
+    <input type="submit" value= "Submit"/>
+</form>
+
+{% if error %}
+  <p class='error'>{{ error }}</p>
+{% endif %}
+{% endblock %}
